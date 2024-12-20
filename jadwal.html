@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,23 +8,11 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header> 
+    <header>
         <logo>
-        <img src="unpam.png" style="width: 10%; height: 25%; border-radius:5cap;">
-    </logo>
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="informasi.html">Informasi</a></li>
-                <li><a href="jadwal.html">Jadwal Pendaftaran</a></li>
-                <li><a href="hubungi.html">Hubungi Kami</a></li>
-            </ul>
-        </nav>
-    </header>
-   
-    <style>
-        
-/* Mengatur gaya untuk body */
+            <img src="unpam.png" style="width: 10%; height: 25%; border-radius:5cap;">
+        </logo>
+        <style>
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -31,7 +20,6 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Mengatur gaya untuk header dan navigasi */
 header {
     background-color: #333;
     color: #fff;
@@ -60,28 +48,24 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Mengatur gaya untuk main */
 main {
     padding: 20px;
     background-color: #fff;
-    margin: 20px;
+    margin: 20px auto;
+    max-width: 800px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Mengatur gaya untuk tabel */
 table {
     width: 100%;
     border-collapse: collapse;
-    margin: 20px 0;
-}
-
-table, th, td {
-    border: 1px solid #ddd;
+    margin-bottom: 20px;
 }
 
 th, td {
-    padding: 10px;
+    padding: 15px;
     text-align: left;
+    border: 1px solid #ddd;
 }
 
 th {
@@ -89,32 +73,59 @@ th {
     color: white;
 }
 
-/* Mengatur gaya untuk footer */
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
 footer {
     text-align: center;
-    padding: 10px 0;
+    padding: 0px 0;
     background-color: #333;
     color: #fff;
     position: fixed;
     width: 100%;
     bottom: 0;
 }
-    </style>
+        </style>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="informasi.html">Informasi</a></li>
+                <li><a href="jadwal.html">Jadwal Pendaftaran</a></li>
+                <li><a href="hubungi.html">Hubungi Kami</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
         <h1>Jadwal Pendaftaran</h1>
         <table>
-            <tr>
-                <th>Tanggal</th>
-                <th>Kegiatan</th>
-            </tr>
-            <tr>
-                <td>1 Januari 2023</td>
-                <td>Pendaftaran Dibuka</td>
-            </tr>
-            <tr>
-            <td>31 Maret 2023</td>
-                <td>Pendaftaran Ditutup</td>
-            </tr>
+            <thead>
+                <tr>
+                    <th>Tanggal</th>
+                    <th>Kegiatan</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1 Januari 2024</td>
+                    <td>Pendaftaran Dibuka</td>
+                </tr>
+                <tr>
+                    <td>31 Maret 2024</td>
+                    <td>Pendaftaran Ditutup</td>
+                </tr>
+                <tr>
+                    <td>1 April 2024</td>
+                    <td>Seleksi Administrasi</td>
+                </tr>
+                <tr>
+                    <td>15 April 2024</td>
+                    <td>Pengumuman Hasil Seleksi</td>
+                </tr>
+                <tr>
+                    <td>1 Mei 2024</td>
+                    <td>Pendaftaran Ulang</td>
+                </tr>
+            </tbody>
         </table>
     </main>
     <footer>
@@ -122,4 +133,5 @@ footer {
     </footer>
 </body>
 </html>
+
 
